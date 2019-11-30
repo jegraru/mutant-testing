@@ -2,6 +2,7 @@ package org.jegraru.mutant;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class PalindromeTest {
@@ -16,5 +17,10 @@ class PalindromeTest {
     @Test
     void givenAnEmptyString_whenIsPalindrome_thenItShouldReturnTrue() {
         assertTrue(palindrome.isPalindrome(""));
+    }
+
+    @Test
+    void givenAStringWithNonMatchingStartAndEnding_whenIsPalindrome_thenItShouldReturnFalse() {
+        assertFalse(palindrome.isPalindrome("nool"));
     }
 }
