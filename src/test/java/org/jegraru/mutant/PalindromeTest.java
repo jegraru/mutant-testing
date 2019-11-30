@@ -12,4 +12,9 @@ class PalindromeTest {
     void givenAPalindrome_whenIsPalindrome_thenItShouldReturnTrue() {
         assertTrue(palindrome.isPalindrome("noon"));
     }
+
+    @Test
+    void givenAnEmptyString_whenIsPalindrome_thenItShouldReturnTrue() {
+        assertTrue(palindrome.isPalindrome(""));
+    }
 }
