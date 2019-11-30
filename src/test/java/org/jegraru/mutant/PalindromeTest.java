@@ -33,4 +33,9 @@ class PalindromeTest {
     void givenABlankString_whenIsPalindrome_thenItShouldReturnTrue() {
         assertTrue(palindrome.isPalindrome(" "));
     }
+
+    @Test
+    void givenAPalindromeWithAnOddLength_whenIsPalindrome_thenItShouldReturnTrue() {
+        assertTrue(palindrome.isPalindrome("nooon"));
+    }
 }
