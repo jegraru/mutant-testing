@@ -23,4 +23,9 @@ class PalindromeTest {
     void givenAStringWithNonMatchingStartAndEnding_whenIsPalindrome_thenItShouldReturnFalse() {
         assertFalse(palindrome.isPalindrome("nool"));
     }
+
+    @Test
+    void givenAStringWithNonMatchingCharactersInTheMiddle_whenIsPalindrome_thenItShouldReturnFalse() {
+        assertFalse(palindrome.isPalindrome("nain"));
+    }
 }
