@@ -48,4 +48,9 @@ class PalindromeTest {
     void givenAPalindromeWithUnbalancedSpaceAtTheEnd_whenIsPalindrome_thenItShouldReturnTrue() {
         assertTrue(palindrome.isPalindrome("noon "));
     }
+
+    @Test
+    void givenAPalindromeWithUnbalancedWhitespaceAtStartAndMiddleAndEnd_whenIsPalindrome_thenItShouldReturnFalse() {
+        assertFalse(palindrome.isPalindrome("n  oo n "));
+    }
 }
