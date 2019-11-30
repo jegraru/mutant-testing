@@ -3,7 +3,7 @@ package org.jegraru.mutant;
 class Palindrome {
 
     boolean isPalindrome(String input) {
-        if (input.length() == 0) {
+        if (input.trim().length() == 0) {
             return true;
         }
         char firstChar = input.charAt(0);

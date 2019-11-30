@@ -16,7 +16,7 @@ class PalindromeTest {
 
     @Test
     void givenAnEmptyString_whenIsPalindrome_thenItShouldReturnTrue() {
-        assertTrue(palindrome.isPalindrome(""));
+        assertTrue(palindrome.isPalindrome(" "));
     }
 
     @Test
@@ -27,5 +27,10 @@ class PalindromeTest {
     @Test
     void givenAStringWithNonMatchingCharactersInTheMiddle_whenIsPalindrome_thenItShouldReturnFalse() {
         assertFalse(palindrome.isPalindrome("nain"));
+    }
+
+    @Test
+    void givenABlankString_whenIsPalindrome_thenItShouldReturnTrue() {
+        assertTrue(palindrome.isPalindrome(" "));
     }
 }
