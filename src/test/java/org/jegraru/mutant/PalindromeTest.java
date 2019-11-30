@@ -16,7 +16,7 @@ class PalindromeTest {
 
     @Test
     void givenAnEmptyString_whenIsPalindrome_thenItShouldReturnTrue() {
-        assertTrue(palindrome.isPalindrome(" "));
+        assertTrue(palindrome.isPalindrome(""));
     }
 
     @Test
@@ -53,4 +53,27 @@ class PalindromeTest {
     void givenAPalindromeWithUnbalancedWhitespaceAtStartAndMiddleAndEnd_whenIsPalindrome_thenItShouldReturnFalse() {
         assertFalse(palindrome.isPalindrome("n  oo n "));
     }
+
+    /*
+    private static Object[][] isPalindromeParams() {
+        return new Object[][] {
+                // input       expected
+                {  "noon",     true     },
+                {  "",         true     },
+                {  "nool",     false    },
+                {  "nain",     false    },
+                {  " ",        true     },
+                {  "nooon",    true     },
+                {  " noon",    true     },
+                {  "noon ",    true     },
+                {  "n  oo n ", false    }
+        };
+    }
+
+    @ParameterizedTest
+    @MethodSource("isPalindromeParams")
+    void givenAnInputString_whenIsPalindrome_thenItShouldReturnTheExpectedResult(String input, boolean expected) {
+        assertEquals(expected, new Palindrome().isPalindrome(input));
+    }
+    */
 }
