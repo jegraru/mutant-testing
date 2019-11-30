@@ -38,4 +38,14 @@ class PalindromeTest {
     void givenAPalindromeWithAnOddLength_whenIsPalindrome_thenItShouldReturnTrue() {
         assertTrue(palindrome.isPalindrome("nooon"));
     }
+
+    @Test
+    void givenAPalindromeWithUnbalancedSpaceAtTheBeginning_whenIsPalindrome_thenItShouldReturnTrue() {
+        assertTrue(palindrome.isPalindrome(" noon"));
+    }
+
+    @Test
+    void givenAPalindromeWithUnbalancedSpaceAtTheEnd_whenIsPalindrome_thenItShouldReturnTrue() {
+        assertTrue(palindrome.isPalindrome("noon "));
+    }
 }
